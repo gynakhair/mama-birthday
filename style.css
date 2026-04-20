@@ -35,17 +35,22 @@
 .subtitle {
   position: absolute;
   top: 15%;
-  width: 100%;
-  text-align: center;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  
   color: #ddd;
   font-size: 1.2rem;
   font-family: Arial, sans-serif;
+  text-align: center;
+
   z-index: 999;
-  padding: 0 20px;
+
   opacity: 0;
   animation: fadeIn 2s ease forwards;
-  animation-delay: 3s;
-   text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+  animation-delay: 1.5s;
+
+  text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
 }
 
 body {
@@ -1021,4 +1026,23 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 }
 .not-loaded * {
   animation-play-state: paused !important;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.6rem;
+    top: 6%;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    top: 14%;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+
+  .flowers {
+    transform: scale(0.9); 
+  }
 }
