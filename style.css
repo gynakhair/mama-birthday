@@ -10,6 +10,44 @@
   --dark-color: #000;
 }
 
+.title {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-family: Arial, sans-serif;
+  z-index: 999;
+  text-shadow: 0 0 10px #fff, 0 0 20px #00ffea;
+
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.subtitle {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  z-index: 999;
+  padding: 0 20px;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 3s;
+   text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+}
+
 body {
   display: flex;
   align-items: flex-end;
